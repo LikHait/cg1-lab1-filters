@@ -34,3 +34,5 @@
 *.filters
 *.idb
 *.vcxproj
+*.manifest
+*.txt

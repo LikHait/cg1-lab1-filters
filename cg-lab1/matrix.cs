@@ -110,4 +110,13 @@ namespace cg_lab1
             return Color.FromArgb(Clamp((int)Math.Sqrt(resultRx * resultRx + resultRy * resultRy), 0, 255), Clamp((int)Math.Sqrt(resultRx * resultRx + resultRy * resultRy), 0, 255), Clamp((int)Math.Sqrt(resultBx * resultBx + resultBy * resultBy), 0, 255));
         }
     }
+
+
+    class SharpnessFilter : MatrixFilter
+    {
+        public SharpnessFilter()
+        {
+            kernel = new float[,] { { 0, -1, 0 }, { -1, 5, -1 }, { 0, -1, 0 } };
+        }
+    }
 }

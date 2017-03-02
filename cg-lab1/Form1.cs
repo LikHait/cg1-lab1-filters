@@ -116,5 +116,11 @@ namespace cg_lab1
             Filters filter = new SobelFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void повышениеРезкостиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharpnessFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
